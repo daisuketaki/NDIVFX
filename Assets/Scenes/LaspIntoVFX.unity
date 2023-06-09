@@ -832,7 +832,7 @@ GameObject:
   - component: {fileID: 1684060149}
   - component: {fileID: 1684060148}
   m_Layer: 0
-  m_Name: VFX
+  m_Name: VFX_burst
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
