@@ -860,6 +860,8 @@ GameObject:
   - component: {fileID: 1684060145}
   - component: {fileID: 1684060144}
   - component: {fileID: 1684060143}
+  - component: {fileID: 1684060149}
+  - component: {fileID: 1684060148}
   m_Layer: 0
   m_Name: VFX
   m_TagString: Untagged
@@ -879,7 +881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a09ab5fc64402d49b12d170a7577986, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _ndiName: IPAD-4 (ZIG SIM PRO)
+  _ndiName: DAISUKENOIPHONE (ZIG SIM PRO)
   _targetTexture: {fileID: 8400000, guid: 9a942fd693257463ca3dbbcda5038dba, type: 2}
   _targetRenderer: {fileID: 0}
   _targetMaterialProperty: _MainTex
@@ -940,7 +942,7 @@ VisualEffect:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1684060142}
   m_Enabled: 1
-  m_Asset: {fileID: 8926484042661614526, guid: bce76bfb3cf684dae87d30642ee98fb2, type: 3}
+  m_Asset: {fileID: 8926484042661614526, guid: c4d4e0163f6b34733a62c25adc7d6384, type: 3}
   m_InitialEventName: OnPlay
   m_InitialEventNameOverriden: 0
   m_StartSeed: 0
@@ -993,6 +995,39 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1684060148
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684060142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e2b929739ac9c488964f69c6ae6872, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textureProperty:
+    m_Name: Spectrum
+  _resolutionProperty:
+    m_Name: Resolution
+  Target: {fileID: 1873996308}
+--- !u!114 &1684060149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684060142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExecuteInEditor: 1
+  m_Bindings:
+  - {fileID: 1684060148}
+  m_VisualEffect: {fileID: 1684060146}
 --- !u!1 &1842658674
 GameObject:
   m_ObjectHideFlags: 0
@@ -1060,4 +1095,71 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1873996307
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1873996310}
+  - component: {fileID: 1873996309}
+  - component: {fileID: 1873996308}
+  m_Layer: 0
+  m_Name: Lasp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1873996308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873996307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac156e94539ca2d4eb473c72c92db6bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _logScale: 1
+  _renderTexture: {fileID: 0}
+  _overrideList: []
+--- !u!114 &1873996309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873996307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51ea4a27c5e58a544a213e784cc61190, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _useDefaultDevice: 1
+  _deviceID: 
+  _channel: 0
+  _resolution: 512
+  _autoGain: 1
+  _gain: 0
+  _dynamicRange: 80
+--- !u!4 &1873996310
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873996307}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.008661509, y: 1.4014218, z: -0.018482447}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
